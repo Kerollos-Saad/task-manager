@@ -1,0 +1,112 @@
+.form-container{
+    max-width: 600px;
+    margin: 0 auto;
+    background: hsl(0 0% 100%);
+    border: 1px solid hsl(214.3 31.8% 91.4%);
+    border-radius: 8px;
+    padding: 32px;
+    box-shadow: 0 1px 3px 0;
+}
+
+.form-container h2 {
+    margin: 0 0 24px 0;
+    font-size: 24px;
+    font-weight: 700;
+    color: 0;
+    letter-spacing: -0.025em;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 14px;
+    color: 0;
+}
+
+.form-group input,
+.form-group textarea{
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid hs1(214.3 31.8% 91.4%);
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: inherit;
+    color: black;
+    transition: all 0.15s ease;
+    background : hs1(0 0% 100%);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: hsl(215.3 16.8% 46.9%);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: hsl(221.3 83.8% 53.9%);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.error {
+    margin-top: 6px;
+}
+
+.error small {
+    color: red;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 24px;
+}
+
+button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.15s ease;
+    font-family: inherit;;
+}
+
+button[type="submit"] {
+    background: hsl(228.3 47% 11.9%);
+    color: white;
+}
+
+button[type="submit"]:hover:not(:disabled) {
+    background: hsl(222.2 47.4% 16%);
+    box-shadow: 0 4px 6px -1px;
+}
+
+button[type="button"] {
+    background: hsl(0 0% 100%);
+    color: hsl(215.3 16.8% 46.9%);
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+button.secondary{
+    background: transparent;
+    color: hsl(222.3 86.8% 8.9%);
+    border: 1px solid hsl(214.3 31.8% 91.4%);
+}
+
+button.secondary:hover {
+    background: hsl(210.3 40.8% 96.4%);
+}
